@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Form Validation Example</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script language="Javascript">
+        function validateForm() {
+            var name = document.frm_email.txt_name.value;
+            var password = document.frm_email.txt_pwd.value;
+
+            if (name == "" || name == null) {
+                alert("Username cannot be blank");
+            } else if (password == "" || password == null) {
+                alert("Password cannot be blank");
+            } else {
+                alert("Validation successful...");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm_email">
+        <h1>Login using your email & password</h1><br> Username: <input type="text" name="txt_name"><br> Password: <input type="password" name="txt_pwd"><br>
+        <input type="button" value="validate" name="validate" onclick="validateForm()">
+    </form>
+    <div class="wrapper ">
+        <a href="./question5.html"><button id="BtnQuestion" type="button" name="question4">Question 5</button></a>
+    </div>
+</body>
+
+</html>

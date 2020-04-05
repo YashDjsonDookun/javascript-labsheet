@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Javascript Events and Envent-Handling Examples</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script language="javascript">
+        function displayTime() {
+            var myDate = new Date();
+            //Example 1
+            //Question 3 pt 1 - Using alert();
+            alert("The time is " + myDate.getHours() + ":" + myDate.getMinutes());
+            //Question 3 pt 2 - Using document.write();
+            document.write("The time is " + myDate.getHours() + ":" + myDate.getMinutes());
+        }
+
+        function displayTimeExampleTwo() {
+            //Example 2
+            var myDate = new Date();
+            document.frm_time.txt_time.value = "The time is " + myDate.getHours() + ":" + myDate.getMinutes();
+        }
+    </script>
+</head>
+
+<body>
+    <form name="frm_time">
+        <h1>Click on the button to display the current time</h1><br>
+        <input type="button" value="display time" name="time" onclick="displayTime()">
+        <input type="button" value="display time - Example 2" name="time" onclick="displayTimeExampleTwo()">
+        <input type="text" value=" " name="txt_time">
+    </form>
+    <a href="#" onClick="displayTime()">Display time</a>
+
+    <div class="wrapper ">
+        <a href="./question4.html"><button id="BtnQuestion" type="button" name="question4">Question 4</button></a>
+    </div>
+</body>
+
+</html>

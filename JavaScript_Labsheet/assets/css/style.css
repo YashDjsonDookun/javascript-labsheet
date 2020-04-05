@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.wrapperTwo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 51vh;
+    transform: translate(-50%, -50%);
+    height: 35vh;
+}
+
+#question1,
+#question2,
+#question4,
+#BtnQuestion {
+    height: 15vh;
+    width: 35vh;
+    font-size: 3em;
+    border-radius: 1.4vh;
+    border: solid .6vh #000;
+}
+
+.LoginContainer {
+    text-align: center;
+    background-color: #dedbf3;
+    height: 33vh;
+    width: 57vh;
+    border: solid 2px grey;
+    margin-right: -32px;
+}
+
+.formContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 28px;
+    width: 48vh;
+    height: 31vh;
+}
+
+.links {
+    margin-top: 2.5vh;
+    font-size: 18px;
+    margin-left: 64px;
+}
+
+.links>h2 {
+    padding: 5px;
+}
+
+#linkTwo {
+    font-size: 25px;
+}
+
+div#labelSection {
+    margin-top: 2vh;
+    margin-left: 31px;
+}
+
+.inputs {
+    display: inline-flex;
+    margin-top: 16px;
+}
+
+input#username {
+    height: 34px;
+    width: 153px;
+    margin-top: 11px;
+    border: 2px solid grey;
+}
+
+input#password {
+    height: 34px;
+    width: 153px;
+    border: 2px solid grey;
+}
+
+div#inputSection {
+    margin-left: -126px;
+    margin-top: 10px;
+}
+
+input#LoginButton {
+    height: 35px;
+    width: 87px;
+    margin-left: 34px;
+    border: 2px solid grey;
+}
+
+input#LoginButton:hover {
+    cursor: pointer;
+}

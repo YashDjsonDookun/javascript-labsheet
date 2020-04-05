@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Exercise 5 - Login Page</title>
+    <script src="./assets/js/main.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="wrapperTwo">
+        <div class="LoginContainer">
+            <form name="loginForm" class="formContainer">
+                <div class="inputs">
+                    <div id="labelSection">
+                        <label id="labelUsername" for="username">Username:</label>
+                        <label id="labelPasswd" for="Password">Password:</label>
+                    </div>
+                    <div id="inputSection">
+                        <input type="text" name="Username" id="username" maxlength="10">
+                        <input type="password" name="Password" id="password" maxlength="10">
+                    </div>
+                </div>
+                <div id="loginButton">
+                    <input type="button" name="LoginButton" id="LoginButton" value="Log In" onclick="validateLogin()">
+                </div>
+                <div class="links">
+                    <h2>NEW USERS: <a href="#">SIGN UP HERE!</a></h2>
+                    <h2 id="linkTwo"><a href="#">FORGOT YOUR PASSWORD?</a></h2>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
